@@ -47,7 +47,7 @@ social:
     url: "https://www.instagram.com/diogorusso/"
 
 #  post permalink
-permalink: /:categories/:slug
+# permalink: /:categories/:slug
 
 # collections:
 #   design:
