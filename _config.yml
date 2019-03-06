@@ -11,7 +11,7 @@ remote_theme: 'diogorusso/diogorusso.jekyll.theme'
 paginate: 5
 plugins: [jekyll-paginate,jekyll-remote-theme]
 
-paginate_path: "/work/page:num/"
+paginate_path: "/page:num/"
 
 # Info
 author: "Diogo Russo"
