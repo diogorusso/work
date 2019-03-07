@@ -6,21 +6,17 @@ script: about
 <div class="box" style="padding-top:6rem;">
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
-    <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
-      <div class="col-xs-12 col-sm-3">
-        <h2 style="font-weight:500">{{ post.title }}</h2>
-        <p class="author">
-          <span class="date">{{ post.categories }}</span>
-        </p>
-        <div class="content">
-          {{ post.content }}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
-      </div>
-      <div class="col-xs-12 col-sm-8">
-         <img src="{{site.cdn}}work/preloader.svg" data-src="{{site.cdn}}work/projects/{{post.slug}}/cover.jpg">
-      </div>
-    </div>
+    {% capture post_image %}
+      {{site.cdn}}work/projects/{{post.slug}}/cover.jpg
+    {% endcapture %}
+    {% include components/containers/card/large.html 
+      title=post.title
+    categories=post.categories
+     description= post.content
+     url=post.url
+     image=post_image
+    %}
+  
   {% endfor %}
 
   <!-- Pagination links -->
