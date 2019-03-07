@@ -463,74 +463,52 @@ a:hover, a:focus { text-decoration: none; }
 .inline { display: inline; margin-right: calc(3rem / 2); }
 
 @media screen and (max-width: 1023px) { .inline { display: block; margin-right: 0; } }
-.slick-prev, .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; display: block; width: 20px; height: 20px; padding: 0; cursor: pointer; color: transparent; border: none; outline: none; background: transparent; }
-
-/* Dots */
-.slick-dots { position: absolute; bottom: 0; display: block; width: 100%; padding: 0; list-style: none; text-align: center; }
-
-.slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
-
-.slick-dots li button { font-size: 0; line-height: 0; display: block; width: 20px; height: 20px; padding: 5px; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; }
-
-.slick-dots li button:before { font-family: "Helvetica Neue", sans-serif; font-size: 2.2rem; line-height: 20px; position: absolute; top: 0; left: 0; width: 20px; height: 20px; content: '•'; text-align: center; opacity: .25; color: black; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-.slick-dots li.slick-active button:before { opacity: .75; color: black; }
-
-/* custom slick */
-.slick-initialized { display: block !important; opacity: 1 !important; }
-
-.process-slider { height: 325px; overflow: hidden; }
-
-.process-pager-slider { display: none; background: black; }
-.process-pager-slider .slick-track { transform: none !important; }
-.process-pager-slider .slick-prev.slick-disabled, .process-pager-slider .slick-next.slick-disabled { display: none !important; }
-.process-pager-slider.active { position: relative; }
-.process-pager-slider.active img { border: 4px solid black; margin-top: 7px !important; }
-.process-pager-slider.active:before { content: ''; width: 0; height: 0; border-style: solid; border-width: 0 30px 10px 30px; border-color: transparent transparent black transparent; position: absolute; left: 0; right: 0; top: -5px; margin: auto; text-align: center; }
-
-.step1 { background: #50E3C2; }
-
-.step2 { background: #F8E71C; }
-
-.step3 { background: #BD71FF; }
-
-.step4 { background: #4A90E2; }
-
-.step5 { background: #f14b4b; }
-
-@media screen and (max-width: 767px) { .process-pager-slider .process-pager { font-size: .8rem; }
-  .slick-dots { display: none !important; } }
-.slick-next, .slick-prev { z-index: 99; }
-.slick-next:before, .slick-prev:before { content: ''; width: 0; height: 0; border-style: solid; }
-
-.slick-prev { left: 2rem; }
-.slick-prev:before { border-width: 10px 17.3px 10px 0; border-color: transparent black transparent transparent; }
-
-.slick-next { right: 2rem; }
-.slick-next:before { border-width: 10px 0 10px 17.3px; border-color: transparent transparent transparent black; }
-
-.step-wrap { display: flex; flex-wrap: wrap; margin: auto; max-width: 60%; min-height: 325px; }
-.step-wrap img { max-height: 325px; width: auto; }
-
-.step-content { max-width: 55%; }
-.step-content h1 { font-family: "Helvetica Neue", sans-serif; font-size: 2rem; }
-
-.step-img-wrap { margin: auto; }
-
-@media screen and (max-width: 1023px) and (min-width: 768px) { .step-wrap { max-width: 85%; }
-  .step-content { max-width: 55%; }
-  .step-content h1 { font-size: 1.5rem; } }
-.process-pager { text-align: center; padding: 1.5rem 0; font-size: 1.15rem; }
-
-@media screen and (max-width: 767px) { .step-wrap { max-width: 100%; }
-  .step-img-wrap img { height: 225px; }
-  .step-content { max-width: 90%; text-align: center; height: 6rem; padding-top: .5rem; }
-  .step-content h1 { font-size: 1.15rem; } }
-@media screen and (max-width: 767px) and (orientation: landscape) { .step-wrap { max-width: 75%; flex-wrap: unset; }
-  .step-img-wrap img { max-height: 200px; }
-  .step-content { max-width: 55%; text-align: left; }
-  .step-content h1 { font-size: 1.2rem; } }
-.center-slide { margin: auto; z-index: 2; }
+.process { /* Dots */ /* custom slick */ }
+.process .slick-prev, .process .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; display: block; width: 20px; height: 20px; padding: 0; cursor: pointer; color: transparent; border: none; outline: none; background: transparent; }
+.process .slick-dots { position: absolute; bottom: 0; display: block; width: 100%; padding: 0; list-style: none; text-align: center; }
+.process .slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+.process .slick-dots li button { font-size: 0; line-height: 0; display: block; width: 20px; height: 20px; padding: 5px; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; }
+.process .slick-dots li button:before { font-family: "Helvetica Neue", sans-serif; font-size: 2.2rem; line-height: 20px; position: absolute; top: 0; left: 0; width: 20px; height: 20px; content: '•'; text-align: center; opacity: .25; color: black; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.process .slick-dots li.slick-active button:before { opacity: .75; color: black; }
+.process .slick-initialized { display: block !important; opacity: 1 !important; }
+.process .process-slider { height: 325px; overflow: hidden; }
+.process .process-pager-slider { display: none; background: black; }
+.process .process-pager-slider .slick-track { transform: none !important; }
+.process .process-pager-slider .slick-prev.slick-disabled, .process .process-pager-slider .slick-next.slick-disabled { display: none !important; }
+.process .process-pager-slider.active { position: relative; }
+.process .process-pager-slider.active img { border: 4px solid black; margin-top: 7px !important; }
+.process .process-pager-slider.active:before { content: ''; width: 0; height: 0; border-style: solid; border-width: 0 30px 10px 30px; border-color: transparent transparent black transparent; position: absolute; left: 0; right: 0; top: -5px; margin: auto; text-align: center; }
+.process .step1 { background: #50E3C2; }
+.process .step2 { background: #F8E71C; }
+.process .step3 { background: #BD71FF; }
+.process .step4 { background: #4A90E2; }
+.process .step5 { background: #f14b4b; }
+@media screen and (max-width: 767px) { .process .process-pager-slider .process-pager { font-size: .8rem; }
+  .process .slick-dots { display: none !important; } }
+.process .slick-next, .process .slick-prev { z-index: 99; }
+.process .slick-next:before, .process .slick-prev:before { content: ''; width: 0; height: 0; border-style: solid; }
+.process .slick-prev { left: 2rem; }
+.process .slick-prev:before { border-width: 10px 17.3px 10px 0; border-color: transparent black transparent transparent; }
+.process .slick-next { right: 2rem; }
+.process .slick-next:before { border-width: 10px 0 10px 17.3px; border-color: transparent transparent transparent black; }
+.process .step-wrap { display: flex; flex-wrap: wrap; margin: auto; max-width: 60%; min-height: 325px; }
+.process .step-wrap img { max-height: 325px; width: auto; }
+.process .step-content { max-width: 55%; }
+.process .step-content h1 { font-family: "Helvetica Neue", sans-serif; font-size: 2rem; }
+.process .step-img-wrap { margin: auto; }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .process .step-wrap { max-width: 85%; }
+  .process .step-content { max-width: 55%; }
+  .process .step-content h1 { font-size: 1.5rem; } }
+.process .process-pager { text-align: center; padding: 1.5rem 0; font-size: 1.15rem; }
+@media screen and (max-width: 767px) { .process .step-wrap { max-width: 100%; }
+  .process .step-img-wrap img { height: 225px; }
+  .process .step-content { max-width: 90%; text-align: center; height: 6rem; padding-top: .5rem; }
+  .process .step-content h1 { font-size: 1.15rem; } }
+@media screen and (max-width: 767px) and (orientation: landscape) { .process .step-wrap { max-width: 75%; flex-wrap: unset; }
+  .process .step-img-wrap img { max-height: 200px; }
+  .process .step-content { max-width: 55%; text-align: left; }
+  .process .step-content h1 { font-size: 1.2rem; } }
+.process .center-slide { margin: auto; z-index: 2; }
 
 .animate, .top-bar .icon { transition: all 0.3s; }
 
@@ -605,7 +583,7 @@ a:hover, a:focus { text-decoration: none; }
       <a href="/work/creative-direction/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
     </div>
     <div class="col-xs-12 col-sm-8">
-            <div class="your-class">
+            <div class="card-large-slider">
                     <div>
                         <img src="/work/assets/work/preloader.svg" data-src="
       /work/assets/work/projects/20160730_My-Philosophy_Fashion-Branding/cover.jpg
@@ -644,7 +622,7 @@ a:hover, a:focus { text-decoration: none; }
       <a href="/work/experience-design/2016/07/30/20160731_Green-Lid_OPs-Strategy.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
     </div>
     <div class="col-xs-12 col-sm-8">
-            <div class="your-class">
+            <div class="card-large-slider">
                     <div>
                         <img src="/work/assets/work/preloader.svg" data-src="
       /work/assets/work/projects/20160731_Green-Lid_OPs-Strategy/cover.jpg
@@ -683,7 +661,7 @@ a:hover, a:focus { text-decoration: none; }
       <a href="/work/creative-direction/2016/07/30/20160730_Coca-Cola_RED-App-Concept.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
     </div>
     <div class="col-xs-12 col-sm-8">
-            <div class="your-class">
+            <div class="card-large-slider">
                     <div>
                         <img src="/work/assets/work/preloader.svg" data-src="
       /work/assets/work/projects/20160730_Coca-Cola_RED-App-Concept/cover.jpg
@@ -722,7 +700,7 @@ a:hover, a:focus { text-decoration: none; }
       <a href="/work/experience-design/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
     </div>
     <div class="col-xs-12 col-sm-8">
-            <div class="your-class">
+            <div class="card-large-slider">
                     <div>
                         <img src="/work/assets/work/preloader.svg" data-src="
       /work/assets/work/projects/20160730_My-Philosophy_Fashion-Branding/cover.jpg
@@ -761,7 +739,7 @@ a:hover, a:focus { text-decoration: none; }
       <a href="/work/graphic-design/2016/07/07/20160707_Berinjela_Design.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">Read More</a>
     </div>
     <div class="col-xs-12 col-sm-8">
-            <div class="your-class">
+            <div class="card-large-slider">
                     <div>
                         <img src="/work/assets/work/preloader.svg" data-src="
       /work/assets/work/projects/20160707_Berinjela_Design/cover.jpg
@@ -856,7 +834,8 @@ a:hover, a:focus { text-decoration: none; }
 </footer>
 	<style>
 		
-		@-webkit-keyframes bounceArrow { 0% { transform: translateY(0); }
+		@charset "UTF-8";
+@-webkit-keyframes bounceArrow { 0% { transform: translateY(0); }
   100% { transform: translateY(8px); } }
 @-moz-keyframes bounceArrow { 0% { transform: translateY(0); }
   100% { transform: translateY(8px); } }
@@ -896,6 +875,22 @@ a:hover, a:focus { text-decoration: none; }
 .portfolio-item img:hover { -webkit-filter: grayscale(0) blur(0) saturate(100%); filter: grayscale(0) blur(0) saturate(100%); }
 
 .more-projects { text-align: center; }
+
+.card-large-slider { /* Dots */ /* custom slick */ }
+.card-large-slider .slick-prev, .card-large-slider .slick-next { font-size: 0; line-height: 0; position: absolute; top: 50%; display: block; width: 20px; height: 20px; padding: 0; cursor: pointer; color: transparent; border: none; outline: none; background: transparent; }
+.card-large-slider .slick-dots { bottom: 0; display: block; width: 100%; padding: 0; list-style: none; text-align: center; }
+.card-large-slider .slick-dots li { position: relative; display: inline-block; width: 20px; height: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+.card-large-slider .slick-dots li button { font-size: 0; line-height: 0; display: block; width: 20px; height: 20px; padding: 5px; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; }
+.card-large-slider .slick-dots li button:before { font-family: "Helvetica Neue", sans-serif; font-size: 2.2rem; line-height: 20px; position: absolute; top: 0; left: 0; width: 20px; height: 20px; content: '•'; text-align: center; opacity: .25; color: black; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.card-large-slider .slick-dots li.slick-active button:before { opacity: .75; color: black; }
+.card-large-slider .slick-initialized { display: block !important; opacity: 1 !important; }
+.card-large-slider .slick-next, .card-large-slider .slick-prev { z-index: 99; }
+.card-large-slider .slick-next:before, .card-large-slider .slick-prev:before { content: ''; width: 0; height: 0; border-style: solid; }
+.card-large-slider .slick-prev { left: 2rem; }
+.card-large-slider .slick-prev:before { border-width: 10px 17.3px 10px 0; border-color: transparent black transparent transparent; }
+.card-large-slider .slick-next { right: 2rem; }
+.card-large-slider .slick-next:before { border-width: 10px 0 10px 17.3px; border-color: transparent transparent transparent black; }
+.card-large-slider .center-slide { margin: auto; z-index: 2; }
 
 .footer-wrap { max-width: 515px; text-align: center; margin: 3rem auto; }
 .footer-wrap svg { width: 150px; }
@@ -946,7 +941,6 @@ a:hover, a:focus { text-decoration: none; }
 
 .slick-arrow.slick-hidden { display: none; }
 
-/*# sourceMappingURL=slick.min.css.map */
 .climate-corp { background: linear-gradient(180deg, #1baeb5 0%, #96d23c 100%); padding: 1.5rem 1rem 6rem; width: 100%; position: relative; }
 .climate-corp .header { text-align: center; padding: 0 1rem; }
 .climate-corp .header h2 { color: #FCFCFC; text-shadow: 4px 4px 20px #225f63; font-size: 2.5rem; margin-block-end: 1rem; }
