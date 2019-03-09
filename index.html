@@ -11,10 +11,12 @@ script: about
     {% endcapture %}
     {% include components/containers/card/large.html 
       title=post.title
-    categories=post.categories
-     description= post.content
-     url=post.url
-     image=post_image
+      categories=post.categories
+      description= post.content
+      url=post.url
+      image=post_image
+      type="slider"
+      count=3
     %}
   
   {% endfor %}
