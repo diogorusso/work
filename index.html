@@ -3,6 +3,18 @@ layout: site/default
 title: Work
 script: about
 ---
+{% include components/hero/minimal.html
+  title= "I'm Diogo Russo"
+  subtitle= "UX and Product Design at The Climate Corporation, San Francisco. Originally from Rio de Janeiro, I have a MBA in Design Strategy from California College of the Arts. I have fun making things and sharing ideas. I create colorful drawings.    👉"
+  bg_color="bg-light"
+  wrap="wrap-large"
+  txt_align="txt-left"
+  txt_color="txt-dark"
+  scroll_arrow="false"
+  anchor="work"
+%}
+<a id="work"></a>
+
 <div class="box" style="padding-top:6rem;">
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
@@ -22,7 +34,7 @@ script: about
   {% endfor %}
 
   <!-- Pagination links -->
-  <div class="pagination">
+  {% comment %} <div class="pagination">
     {% if paginator.previous_page %}
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">
         Previous
@@ -38,5 +50,5 @@ script: about
     {% else %}
       <span class="next ">Next</span>
     {% endif %}
-  </div>
+  </div> {% endcomment %}
 </div>
