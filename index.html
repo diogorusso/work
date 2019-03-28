@@ -35,7 +35,7 @@ script: about
   {% endfor %}
 
   <!-- Pagination links -->
-  {% comment %} <div class="pagination">
+  <div class="pagination">
     {% if paginator.previous_page %}
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">
         Previous
@@ -51,5 +51,5 @@ script: about
     {% else %}
       <span class="next ">Next</span>
     {% endif %}
-  </div> {% endcomment %}
+  </div>
 </div>
