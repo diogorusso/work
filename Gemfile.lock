@@ -1,3 +1,9 @@
+PATH
+  remote: ../diogorusso.jekyll.theme
+  specs:
+    diogorusso.jekyll.theme (0.1.0)
+      jekyll
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -244,6 +250,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  diogorusso.jekyll.theme!
   github-pages
   jekyll-feed
   jekyll-paginate

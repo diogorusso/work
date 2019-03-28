@@ -3,6 +3,7 @@ gem 'activesupport'
 gem "rake"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
+gem "diogorusso.jekyll.theme", path: "../diogorusso.jekyll.theme"
 gem "jekyll-paginate"
 group :jekyll_plugins do
    gem "jekyll-feed"

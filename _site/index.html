@@ -428,10 +428,11 @@ img { display: block; width: 100%; }
 
 .masthead { height: 100vh; width: 100%; display: flex; overflow: hidden; position: relative; z-index: 1; }
 .masthead .masthead-wrap { padding: 0 1rem; max-width: 575px; }
-.masthead .masthead-wrap-large { padding: 0 1rem; max-width: 825px; }
+.masthead .masthead-wrap-large { padding: 0 1rem; max-width: 765px; }
 .masthead a { text-decoration: none; }
 .masthead h1 { font-size: 3rem; }
-.masthead h2 { font-family: "Helvetica Neue", sans-serif; font-size: 2.2rem; font-weight: 200; }
+.masthead .jumbo { font-size: 6rem; }
+.masthead h2 { font-family: "Helvetica Neue", sans-serif; font-size: 2.1rem; font-weight: 200; }
 .masthead h3 { font-size: 1.5rem; }
 
 #scroll-arrow { width: 14px; display: block; margin: 10px auto; font-size: 2.5rem; animation: bounceArrow .35s ease-in alternate infinite; }
@@ -440,16 +441,19 @@ img { display: block; width: 100%; }
 
 .center-content { width: 75%; z-index: 2; position: absolute; left: 50%; top: 45%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) { .masthead .jumbo { font-size: 4.5rem; } }
 @media screen and (max-width: 767px) { .masthead { text-align: center; }
   .masthead h1 { font-size: 1.75rem; }
-  .masthead h2 { font-size: 1.3rem; font-weight: 300; }
+  .masthead h2 { font-size: 1.3rem; font-weight: 300; padding: 0 .65rem; }
   .masthead h3 { font-size: 1.2rem; }
+  .masthead .jumbo { font-size: 3.5rem; line-height: 1; }
   .arrow-wrap { position: absolute; bottom: 18%; left: 50%; -webkit-transform: translate(-50%,0); -moz-transform: translate(-50%,0); -ms-transform: translate(-50%,0); -o-transform: translate(-50%,0); transform: translate(-50%,0); }
-  .center-content { width: 95%; top: 40%; } }
-@media screen and (max-width: 767px) and (orientation: landscape) { .center-content { width: 70%; top: 45%; }
+  .center-content { width: 95%; top: 50%; } }
+@media screen and (max-width: 767px) and (orientation: landscape) { .center-content { width: 90%; top: 50%; }
   .masthead { text-align: center; }
   .masthead h1 { font-size: 1.5rem; }
   .masthead h2 { font-size: 1.1rem; }
+  .masthead .jumbo { font-size: 2.4rem; }
   .arrow-wrap { position: absolute; bottom: 2.15rem; } }
 .full { width: 100%; height: 100%; }
 
@@ -581,12 +585,12 @@ img { display: block; width: 100%; }
 <header class="masthead bg-light">
     <div class="masthead-wrap-large  center-content">
         <a href="#work" class="page-scroll txt-dark">
-            <h1 class="title-large">
-                I'm Diogo Russo
+            <h1 class="title-large jumbo">
+                Diogo Russo
                 <br class="show-for-small-only">
             </h1>
             <h2>
-                UX and Product Design at The Climate Corporation, San Francisco. Originally from Rio de Janeiro, I have a MBA in Design Strategy from California College of the Arts. I have fun making things and sharing ideas. I create colorful drawings.    👉
+                UX and Product Design at The Climate Corporation, San Francisco. Originally from Rio de Janeiro, I have a MBA in Design Strategy from California College of the Arts. I help people bring ideas to life and I also like to create colorful drawings.
             </h2>
             
         </a>
@@ -610,13 +614,11 @@ img { display: block; width: 100%; }
 
 
 
-
-
 <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
   
     
   
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-3 last-xs first-sm">
   
       <h2 style="font-weight:500">My Philosophy Fashion</h2>
       
@@ -633,14 +635,14 @@ img { display: block; width: 100%; }
         </div>
       
       
-        <a href="/work/creative-direction/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">
+        <a href="/work/creative-direction/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem;">
           Read More
         </a>
       
   </div>
 
     
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-md-8">
      
         
   <div class="card-large-slider">
@@ -683,13 +685,11 @@ img { display: block; width: 100%; }
 
 
 
-
-
 <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
   
     
   
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-3 last-xs first-sm">
   
       <h2 style="font-weight:500">GreenLid XD</h2>
       
@@ -706,14 +706,14 @@ img { display: block; width: 100%; }
         </div>
       
       
-        <a href="/work/experience-design/2016/07/30/20160731_Green-Lid_OPs-Strategy.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">
+        <a href="/work/experience-design/2016/07/30/20160731_Green-Lid_OPs-Strategy.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem;">
           Read More
         </a>
       
   </div>
 
     
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-md-8">
      
         
   <div class="card-large-slider">
@@ -756,13 +756,11 @@ img { display: block; width: 100%; }
 
 
 
-
-
 <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
   
     
   
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-3 last-xs first-sm">
   
       <h2 style="font-weight:500">Coca-Cola Red App</h2>
       
@@ -779,14 +777,14 @@ img { display: block; width: 100%; }
         </div>
       
       
-        <a href="/work/creative-direction/2016/07/30/20160730_Coca-Cola_RED-App-Concept.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">
+        <a href="/work/creative-direction/2016/07/30/20160730_Coca-Cola_RED-App-Concept.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem;">
           Read More
         </a>
       
   </div>
 
     
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-md-8">
      
         
   <div class="card-large-slider">
@@ -829,13 +827,11 @@ img { display: block; width: 100%; }
 
 
 
-
-
 <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
   
     
   
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-3 last-xs first-sm">
   
       <h2 style="font-weight:500">Boomerrang XD</h2>
       
@@ -852,14 +848,14 @@ img { display: block; width: 100%; }
         </div>
       
       
-        <a href="/work/experience-design/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">
+        <a href="/work/experience-design/2016/07/30/20160730_My-Philosophy_Fashion-Branding.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem;">
           Read More
         </a>
       
   </div>
 
     
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-md-8">
      
         
   <div class="card-large-slider">
@@ -902,13 +898,11 @@ img { display: block; width: 100%; }
 
 
 
-
-
 <div class="row middle-sm between-sm" style="margin-bottom:8rem;">
   
     
   
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-md-3 last-xs first-sm">
   
       <h2 style="font-weight:500">Estúdio Berinjela ID</h2>
       
@@ -925,14 +919,14 @@ img { display: block; width: 100%; }
         </div>
       
       
-        <a href="/work/graphic-design/2016/07/07/20160707_Berinjela_Design.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem; text-decoration:none; color:white;background:black;">
+        <a href="/work/graphic-design/2016/07/07/20160707_Berinjela_Design.html" class="button" style="margin: 2rem 0;padding: 1rem 3rem; font-size:1rem;">
           Read More
         </a>
       
   </div>
 
     
-  <div class="col-xs-12 col-sm-8">
+  <div class="col-xs-12 col-md-8">
      
         
   <div class="card-large-slider">

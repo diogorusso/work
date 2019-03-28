@@ -2,3 +2,5 @@ url: ""
 baseurl: "/work"
 cdn: /work/assets/
 static: /assets/
+theme: "diogorusso.jekyll.theme"
+remote_theme: ''
