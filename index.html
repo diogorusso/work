@@ -17,14 +17,14 @@ script: about
 %}
 <a id="work"></a>
 
-<section>
+
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
     {% capture post_image %}
       {{site.cdn}}work/projects/{{post.slug}}/cover.jpg
     {% endcapture %}
-    <div class="row middle-xs" style="padding: 4rem 0;">
-      <div class="box col-xs-12">
+    <section style="padding-top: 4rem;padding-bottom: 4rem;">
+      <div class="box">
         {% include components/card/large.html 
           title=post.title
           categories=post.categories
@@ -35,9 +35,7 @@ script: about
           count=3
         %}
       </div>
-    </div>  
-  </section>
-  
+    </section>
   {% endfor %}
 
   <!-- Pagination links -->
