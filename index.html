@@ -17,21 +17,26 @@ script: about
 %}
 <a id="work"></a>
 
-<div class="box">
+<section>
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
     {% capture post_image %}
       {{site.cdn}}work/projects/{{post.slug}}/cover.jpg
     {% endcapture %}
-    {% include components/card/large.html 
-      title=post.title
-      categories=post.categories
-      description= post.content
-      url=post.url
-      image=post_image
-      type="slider" 
-      count=3
-    %}
+    <div class="row middle-xs" style="padding: 4rem 0;">
+      <div class="box col-xs-12">
+        {% include components/card/large.html 
+          title=post.title
+          categories=post.categories
+          description= post.content
+          url=post.url
+          image=post_image
+          type="slider" 
+          count=3
+        %}
+      </div>
+    </div>  
+  </section>
   
   {% endfor %}
 
