@@ -147,6 +147,20 @@
   100% { transform: translateY(8px); } }
 @keyframes bounceArrow { 0% { transform: translateY(0); }
   100% { transform: translateY(8px); } }
+.hide { display: none; }
+
+.show { display: block; }
+
+@media screen and (max-width: 375px) { .hide-xs { display: none !important; } }
+@media screen and (max-width: 767px) { .hide-sm { display: none !important; } }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .hide-md { display: none !important; } }
+@media screen and (min-width: 1024px) { .hide-lg { display: none !important; } }
+
+@media screen and (max-width: 375px) { .show-xs { display: block !important; } }
+@media screen and (max-width: 767px) { .show-sm { display: block !important; } }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .show-md { display: block !important; } }
+@media screen and (min-width: 1024px) { .show-lg { display: block !important; } }
+
 h1, h2, h3 { font-weight: 300; line-height: 1.25; }
 
 h1 { font-family: "Verdana", serif; }
@@ -428,11 +442,11 @@ img { display: block; width: 100%; }
 
 .masthead { height: 100vh; width: 100%; display: flex; overflow: hidden; position: relative; z-index: 1; }
 .masthead .masthead-wrap { padding: 0 1rem; max-width: 575px; }
-.masthead .masthead-wrap-large { padding: 0 1rem; max-width: 765px; }
+.masthead .masthead-wrap-large { padding: 0 1rem; max-width: 730px; }
 .masthead a { text-decoration: none; }
 .masthead h1 { font-size: 3rem; }
-.masthead .jumbo { font-size: 4rem; }
-.masthead h2 { font-family: "Helvetica Neue", sans-serif; font-size: 2.1rem; font-weight: 200; }
+.masthead .jumbo { font-size: 5.4rem; margin-bottom: 1rem; }
+.masthead h2 { font-family: "Helvetica Neue", sans-serif; font-size: 3rem; font-weight: 200; }
 .masthead h3 { font-size: 1.5rem; }
 
 #scroll-arrow { width: 14px; display: block; margin: 10px auto; font-size: 2.5rem; animation: bounceArrow .35s ease-in alternate infinite; }
@@ -441,15 +455,16 @@ img { display: block; width: 100%; }
 
 .center-content { width: 75%; z-index: 2; position: absolute; left: 50%; top: 45%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) { .masthead .jumbo { font-size: 3.75rem; } }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .masthead .jumbo { font-size: 4.75rem; }
+  .masthead h2 { font-size: 2.5rem; } }
 @media screen and (max-width: 767px) { .masthead { text-align: center; }
   .masthead h1 { font-size: 1.75rem; }
-  .masthead h2 { font-size: 1.3rem; font-weight: 300; padding: 0 .65rem; }
-  .masthead h3 { font-size: 1.2rem; }
-  .masthead .jumbo { font-size: 3.5rem; line-height: 1; }
+  .masthead h2 { font-size: 1.5rem; font-weight: 300; padding: 0 .65rem; }
+  .masthead h3 { font-size: 1rem; }
+  .masthead .jumbo { font-size: 2.5rem; line-height: 1; }
   .arrow-wrap { position: absolute; bottom: 18%; left: 50%; -webkit-transform: translate(-50%,0); -moz-transform: translate(-50%,0); -ms-transform: translate(-50%,0); -o-transform: translate(-50%,0); transform: translate(-50%,0); }
-  .center-content { width: 95%; top: 50%; } }
-@media screen and (max-width: 767px) and (orientation: landscape) { .center-content { width: 90%; top: 50%; }
+  .center-content { width: 95%; top: 45%; } }
+@media screen and (max-width: 767px) and (orientation: landscape) { .center-content { width: 90%; top: 45%; }
   .masthead { text-align: center; }
   .masthead h1 { font-size: 1.5rem; }
   .masthead h2 { font-size: 1.1rem; }
@@ -586,12 +601,16 @@ img { display: block; width: 100%; }
     <div class="masthead-wrap-large  center-content">
         <a href="#work" class="page-scroll txt-dark">
             <h1 class="title-large jumbo">
-                I'm Diogo Russo
+                Diogo Russo
                 <br class="show-for-small-only">
             </h1>
             <h2>
-                UX and Product Design at The Climate Corporation, San Francisco. Originally from Rio de Janeiro, I have a MBA in Design Strategy from California College of the Arts. I help people bring ideas to life and I also like to create colorful drawings.
+                UX and Product Design
             </h2>
+            
+            <h3>
+                Working at The Climate Corporation, San Francisco. Originally from Rio de Janeiro, I have a MBA in Design Strategy from California College of the Arts. I help people bring ideas to life and I also like to create colorful drawings.
+            </h3>
             
         </a>
     </div>
@@ -960,7 +979,17 @@ img { display: block; width: 100%; }
   
 
   <!-- Pagination links -->
-  
+  <div class="pagination">
+    
+      <span class="previous">Previous</span>
+    
+    <span class="page_number ">
+      Page: 1 of 8
+    </span>
+    
+      <a href="/work/page2/" class="next">Next</a>
+    
+  </div>
 </div>
 
     </main>
@@ -1030,6 +1059,20 @@ img { display: block; width: 100%; }
   100% { transform: translateY(8px); } }
 @keyframes bounceArrow { 0% { transform: translateY(0); }
   100% { transform: translateY(8px); } }
+.hide { display: none; }
+
+.show { display: block; }
+
+@media screen and (max-width: 375px) { .hide-xs { display: none !important; } }
+@media screen and (max-width: 767px) { .hide-sm { display: none !important; } }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .hide-md { display: none !important; } }
+@media screen and (min-width: 1024px) { .hide-lg { display: none !important; } }
+
+@media screen and (max-width: 375px) { .show-xs { display: block !important; } }
+@media screen and (max-width: 767px) { .show-sm { display: block !important; } }
+@media screen and (max-width: 1023px) and (min-width: 768px) { .show-md { display: block !important; } }
+@media screen and (min-width: 1024px) { .show-lg { display: block !important; } }
+
 .card-wrap { padding: 1rem; }
 
 .card { position: relative; background: #FCFCFC; box-shadow: 0 15px 25px rgba(21, 21, 21, 0.15); transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out; height: 100%; }
